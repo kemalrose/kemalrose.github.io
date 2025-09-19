@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <title>Kemal Rose</title>
@@ -8,254 +7,92 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <style>
+    .social-links p { margin:6px 0; font-size:18px; }
+    .social-links a { color:#333; text-decoration:none; transition:color 0.3s ease; }
+    .social-links a:hover { color:#2a4d9c; text-decoration:none; }
+    .social-links .glyphicon { margin-right:6px; font-size:20px; vertical-align:middle; }
+  </style>
 </head>
 <body>
-
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="publications.html">Research</a></li>  <!-- NEW LINK -->
         <li><a href="CV.pdf">CV</a></li>
         <li><a href="thesis.pdf">Thesis</a></li>
-        <li><a href="https://scholar.google.com/citations?user=a_yHCgQAAAAJ&hl=en">GoogleScholar</a></li>
       </ul>
     </div>
   </div>
 </nav>
-  
+
 <!-- Page Content -->
 <div class="container">
   <div class="row">
 
-    <!-- Main Content (Text + Publications) -->
-    <div class="col-md-8">
-      <div style="margin-top:3%; text-align:justify;">    
-        <p>Hello!</p>
-        <p>Welcome to my homepage.</p>
-        <p>
-          I am a Postdoctoral Researcher at KTH Royal Institute of Technology in Sweden, specializing in computational algebra. I work under the mentorship of Professor Sandra Di Rocco. I obtained my PhD at the Max Planck Institute for Mathematics in the Sciences in Leipzig, where I was supervised by Simon Telen and Bernd Sturmfels.
-        </p>
-      </div>
-
-
-
-
-
-
-<!-- Publications -->
-<h2 id="publications">Research</h2>
-
-
-<style>
-  .publications {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .paper {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5em;
-  }
-
-  .paper img {
-    width: 120px;   /* adjust size */
-    height: auto;
-    margin-right: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  }
-
-  .paper-details {
-    max-width: 600px;
-  }
-
-  .paper-details a {
-    font-weight: bold;
-    font-size: 1.05em;
-    color: #2a4d9c;
-    text-decoration: none;
-  }
-
-  .paper-details a:hover {
-    text-decoration: underline;
-  }
-
-  .paper-details .meta {
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 4px;
-  }
-</style>
-
-
-
-<ul class="publications">
-  <li class="paper">
-    <img src="Pictures/tropical_Mate.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://www.sciencedirect.com/science/article/pii/S0747717125000598?dgcid=rss_sd_all">
-        Computing positive tropical varieties and lower bounds on the number of positive roots
-      </a>
-      <div class="meta">
-        with Máté L. Telek<br>
-        <em>Journal of Symbolic Computation</em>, vol. 132 (2026)
-      </div>
-    </div>
-  </li>
-</ul>
-
-
-  <li class="paper">
-    <img src="Pictures/osculating.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://arxiv.org/abs/2507.02823">
-        Osculating Geometry and Higher-Order Distance Loci
-      </a>
-      <div class="meta">
-        with Sandra Di Rocco, Luca Sodomaco<br>
-        arXiv:2507.02823 (2025)
-      </div>
-    </div>
-  </li>
-
-  <li class="paper">
-    <img src="Pictures/Gorenstein.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="Master-Paper.pdf">
-        Toric non-Gorenstein loci
-      </a>
-      <div class="meta">
-        To appear in "Varieties, polyhedra, computation", EMS Series of Congress Reports (2025)
-      </div>
-    </div>
-  </li>
-
-  <li class="paper">
-    <img src="Pictures/implicitizatio.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://link.springer.com/chapter/10.1007/978-3-031-62127-7_17">
-        Tropical implicitization revisited
-      </a>
-      <div class="meta">
-        with Bernd Sturmfels, Simon Telen<br>
-        in <em>The Computer Algebra System OSCAR</em>, Algorithms and Computation in Mathematics, Springer vol. 32, pp. 429–450 (2025)
-      </div>
-    </div>
-  </li>
-
-
-  <li class="paper">
-    <img src="Pictures/polyhedral type.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://arxiv.org/abs/2402.08993">
-        The polyhedral type of a polynomial map on the plane
-      </a>
-      <div class="meta">
-        with Boulos el Hilany<br>
-        arXiv:2402.08993 (2024)
-      </div>
-    </div>
-  </li>
-
-  <li class="paper">
-    <img src="Pictures/certificate.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://dl.acm.org/doi/10.1145/3580277">
-        Certifying zeros of polynomial systems using interval arithmetic
-      </a>
-      <div class="meta">
-        with Paul Breiding, Sascha Timme<br>
-        <em>ACM Trans. Math. Software</em> 49, no. 1, Art. 11 (2023)
-      </div>
-    </div>
-  </li>
-
-  <li class="paper">
-    <img src="Pictures/POMDPs.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://www.sciencedirect.com/science/article/pii/S074771712300055X">
-        Algebraic optimization of sequential decision problems
-      </a>
-      <div class="meta">
-        with Mareike Dressler, Guido Montufar, Johannes Müller, Marina Garotte<br>
-        <em>Journal of Symbolic Computation</em>, vol. 121 (2023)
-      </div>
-    </div>
-  </li>
-
-  <li class="paper">
-    <img src="Pictures/homotopy.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://arxiv.org/abs/2302.04117">
-        A polyhedral homotopy algorithm for computing critical points of polynomial programs
-      </a>
-      <div class="meta">
-        with Julia Lindberg, Leonid Monin<br>
-        arXiv:2302.04117 (2023)
-      </div>
-    </div>
-  </li>
-
-  <li class="paper">
-    <img src="Pictures/Sparse.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://arxiv.org/pdf/2308.07765">
-        The algebraic degree of sparse polynomial optimization
-      </a>
-      <div class="meta">
-        with Julia Lindberg, Leonid Monin<br>
-        arXiv:2308.07765 (2023)
-      </div>
-    </div>
-  </li>
-
-  <li class="paper">
-    <img src="Pictures/padicsurfaces.png" alt="Paper thumbnail">
-    <div class="paper-details">
-      <a href="https://link.springer.com/article/10.1007/s12188-023-00269-7">
-        Lines on 𝑝-adic and real cubic surfaces
-      </a>
-      <div class="meta">
-        with Rida Ait El Manssour, Yassine El Maazouz, Enis Kaya<br>
-        <em>Abh. Math. Semin. Univ. Hambg.</em>, vol. 93, pp. 149–162 (2023)
-      </div>
-    </div>
-  </li>
-</ul>
-
-
-    </div>
-
-    <!-- Sidebar (Profile Picture + Contact Info) -->
+    <!-- Sidebar -->
     <div class="col-md-4 text-center">
-      <div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
+      <div style="font-family:'Oswald',sans-serif; font-size:32px;">
         <b>Kemal Rose</b>
       </div>
       <br>
-      <img class="img-responsive img-circle center-block" src="photo.jpg" alt="Profile photo" style="max-width: 250px; height: auto;">
+      <img class="img-responsive img-circle center-block" src="photo.jpg"
+           alt="Profile photo" style="max-width:250px; height:auto;">
       <br>
       <p><b>Email: kemalr[at]kth[dot]se</b></p>
+
+      <div class="social-links">
+        <p>
+          <a href="https://scholar.google.com/citations?user=a_yHCgQAAAAJ&hl=en" target="_blank">
+            <span class="glyphicon glyphicon-education"></span> Google Scholar
+          </a>
+        </p>
+        <p>
+          <a href="https://linkedin.com/in/kemal-rose-254b47358" target="_blank">
+            <span class="glyphicon glyphicon-briefcase"></span> LinkedIn
+          </a>
+        </p>
+        <p>
+          <a href="https://maps.google.com/?q=KTH+Royal+Institute+of+Technology,+Stockholm" target="_blank">
+            <span class="glyphicon glyphicon-map-marker"></span> Brinellvägen 8, Stockholm
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-8">
+      <div style="margin-top:3%; text-align:justify; font-size:25px;">
+        <p>Hello!</p>
+        <p>Welcome to my homepage.</p>
+        <p>
+          I am a Postdoctoral Researcher at KTH Royal Institute of Technology in Sweden,
+          specializing in computational algebra. I work under the mentorship of
+          <a href="https://www.kth.se/profile/dirocco">Professor Sandra Di Rocco</a>.
+          I obtained my PhD at the Max Planck Institute for Mathematics in the Sciences in Leipzig,
+          where I was supervised by
+          <a href="https://sites.google.com/view/simontelen/home-page">Simon Telen</a> and
+          <a href="https://www.mis.mpg.de/de/people/bernd-sturmfels">Bernd Sturmfels</a>.
+        </p>
+      </div>
     </div>
 
   </div>
 </div>
-<!-- /.container -->
 
 </body>
 </html>
