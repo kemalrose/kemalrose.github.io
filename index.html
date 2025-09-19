@@ -12,7 +12,25 @@
     .social-links a { color:#333; text-decoration:none; transition:color 0.3s ease; }
     .social-links a:hover { color:#2a4d9c; text-decoration:none; }
     .social-links .glyphicon { margin-right:6px; font-size:20px; vertical-align:middle; }
-  </style>
+    /* Increase overall navbar height */
+    .navbar {
+      min-height: 80px;          /* default ~50px */
+    }
+    
+    /* Make the brand/links taller */
+    .navbar-nav > li > a,
+    .navbar-brand {
+      padding-top: 30px;         /* default ~15px */
+      padding-bottom: 30px;
+      font-size: 18px;           /* increase text size if desired */
+    }
+    
+    /* Adjust toggle button (mobile) so it stays centered */
+    .navbar-toggle {
+      margin-top: 23px;          /* half of (new min-height - button height) */
+      margin-bottom: 23px;
+    }
+    </style>
 </head>
 <body>
 
